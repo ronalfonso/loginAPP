@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from 'angularfire2/auth';
-import firebase from 'firebase';
+import * as firebase from 'firebase/app';
 import { map } from "rxjs/operators";
 
 
@@ -10,7 +10,7 @@ import { map } from "rxjs/operators";
 export class AuthService {
 
   constructor(
-    public adAuth: AngularFireAuth
+    public afAuth: AngularFireAuth
   ) { }
   registerUser(email: string, pass: string) {
     return new Promise((resolve, reject) =>{
@@ -33,6 +33,6 @@ export class AuthService {
   }
 
   logout() {
-    return this.adAuth.auth.signOut();
+    return this.afAuth.auth.signOut();
   }
 }

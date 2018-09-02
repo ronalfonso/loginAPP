@@ -13,7 +13,6 @@ import { NotFoundPageComponent } from './components/not-found-page/not-found-pag
 
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
-
 import { environment } from '../environments/environment';
 
 import { AuthService } from './services/auth.service';
@@ -33,7 +32,7 @@ import { AuthService } from './services/auth.service';
     AppRoutingModule,
     FormsModule,
     AngularFireAuthModule,
-    AngularFireModule.initializeApp(environment),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

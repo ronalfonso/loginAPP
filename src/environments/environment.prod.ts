@@ -6,6 +6,6 @@ export const environment = {
     databaseURL: 'https://loginapp-ac907.firebaseio.com',
     projectId: 'loginapp-ac907',
     storageBucket: 'loginapp-ac907.appspot.com',
-    messagingSenderId: '174278025493'
+    messagingSenderId: '174278025493',
   }
 };

@@ -22,6 +22,13 @@
       <li class="nav-item" *ngIf="isLogin">
         <a class="nav-link" href="#" routerLink="/about">About</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link">{{userName}}</a>
+      </li>
+      <li class="nav-item" *ngIf="isLogin">
+        <img src="{{userImages}}" alt="" class="rounded-circle">
+        <span class="badge pill badge-secondary">{{userEmail}}</span>
+      </li>
     </ul>
   </div>
 </nav>
